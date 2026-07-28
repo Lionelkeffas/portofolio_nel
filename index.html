@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Lionel Keffas — Portfolio</title>
+  <meta name="description" content="Portfolio Lionel Keffas — XI RPL 1, SMK Plus Pelita Nusantara. HTML, CSS, JavaScript." />
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#home">Skip to content</a>
+  <div id="preloader" aria-hidden="true">
+    <div class="spinner" role="status" aria-label="loading"></div>
+    <div class="pretext">Memuat — Lionel Keffas</div>
+  </div>
+
+  <header class="site-header" role="banner">
+    <div class="wrap header-grid">
+      <div class="brand" tabindex="0"> 
+        <div class="name">Lionel Keffas</div>
+       <div class="sub">lionelkeffass7@gmail.com</div>
+        <div class="sub">X RPL 1 — SMK Plus Pelita Nusantara</div>
+      </div>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <button id="theme-toggle" aria-pressed="false" aria-label="Toggle theme">🌗</button>
+        <button class="menu-toggle" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle menu">☰</button>
+
+        <ul id="primary-menu" class="menu" role="menubar">
+          <li role="none"><a role="menuitem" href="#home">Home</a></li>
+          <li role="none"><a role="menuitem" href="#about">About</a></li>
+          <li role="none"><a role="menuitem" href="#skills">Skills</a></li>
+          <li role="none"><a role="menuitem" href="#projects">Projects</a></li>
+          <li role="none"><a role="menuitem" href="#certificate">Certificate</a></li>
+          <li role="none"><a role="menuitem" href="#contact">Contact</a></li>
+          <li role="none"><a role="menuitem" href="PPT Portofolio.pptx" download="PPT Portofolio.pptx">Download PPT</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home" class="hero" role="main" aria-label="Homepage">
+    <canvas id="particles" aria-hidden="true"></canvas>
+
+    <div class="glass hero-panel wrap">
+      <div class="hero-left">
+        <h1>Hi, I'm <span class="accent running-name">Lionel Keffas</span></h1>
+        <p class="lead">XI RPL 1 — SMK Plus Pelita Nusantara.</p> 
+         <p class="lead">WEB DEVELOPMENT <DEVELOPER></DEVELOPER></p>
+          <p class="lead">CIBINONG BOGOR</p>
+
+        <div class="hero-cta">
+          <a class="btn" href="#projects">See Projects</a>
+          <a class="btn ghost" href="#contact">Contact</a>
+          <a class="btn outline" href="cv.pdf" download id="download-cv">Download CV</a>
+        </div>
+
+        <div class="socials" aria-hidden="false">
+          <a href="https://github.com/nel174" aria-label="GitHub" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/lionel-keffas-461752412/?skipRedirect=true/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://www.instagram.com/keffaslionel?igsh=cDE0bGd1Mzhrdmdi" aria-label="Instagram (keffaslionell)" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://wa.me/6285782490490" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        </div>
+      </div>
+
+      <aside class="hero-right" aria-label="Profile card">
+        <div class="profile-card glass" role="region" aria-labelledby="profile-name">
+          <div class="avatar">
+            <img src="profile.jpg" alt="Foto Lionel Keffas" onerror="this.style.display='none'; this.parentElement.querySelector('.avatar-fallback').style.display='grid'">
+            <div class="avatar-fallback">LK</div>
+          </div>
+          <h3 id="profile-name">Lionel Keffas</h3>
+          <p class="muted">XI RPL 1 — SMK Plus Pelita Nusantara</p>
+          <div class="tags" aria-hidden="false">
+            <span>HTML, </span><span>CSS, </span><span>JavaScript, </span><span>PHP</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <section id="about" class="section">
+    <div class="glass wrap reveal">
+      <h2>About Me</h2>
+      <p>Saya Lionel Keffas, siswa SMK Plus Pelita Nusantara jurusan Rekayasa Perangkat Lunak yang memiliki minat pada pengembangan website, aplikasi desktop, dan mobile. Saya senang mempelajari teknologi baru serta terus mengembangkan kemampuan melalui berbagai project.</p>
+
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <div class="glass wrap reveal">
+      <h2>Skills</h2>
+      <div class="skills-grid" role="list">
+        <div class="skill" role="listitem">HTML</div>
+        <div class="skill" role="listitem">CSS</div>
+        <div class="skill" role="listitem">JavaScript</div>
+        <div class="skill" role="listitem">Basic Git </div>
+        <div class="skill" role="listitem">PHP</div>
+        <div class="skill" role="listitem">LARAVEL</div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="glass wrap reveal">
+      <h2>Projects</h2>
+      <div class="projects marquee-track" id="projects-track">
+        <article class="project-card">
+          <h3>sistem pengolahan nilai siswa</h3>
+          <img src="project/projek1.png" alt="" style="width: 300px; height: 200px;" >
+           <p>sistem ini digunakan untuk menginput nilai data siswa </p>
+          <button class="tombol-projek" data-modal-img="project/projek1.png">Lihat Gambar Projek</button>
+        </article>
+
+        <article class="project-card">
+          <h3>sistem manajemen data siswa</h3>
+          <img src="project/projek2.png" alt="" style="width: 300px; height: 200PX;">
+          <p>aplikasi ini berfungsi untuk mengecek data siswa</p>
+          <button class="tombol-projek" data-modal-img="project/projek2.png">Lihat gambar Projek</button>
+        </article>
+
+        <article class="project-card">
+          <h3>website jam digital</h3>
+          <img src="project/projek3.png" alt="" style="width: 300px; height: 200PX;">
+          <p> website ini berfungsi sebagai penunjuk waktu secara digital</p>
+          <button class="tombol-projek" data-modal-img="project/projek3.png">Lihat Gambar Projek</button>
+        </article>
+
+        <article class="project-card">
+          <h3>website e-commerce</h3>
+          <img src="project/projek4.png" alt="" style="width: 300px; height: 200PX;">
+          <p>website ini berfungsi sebagai platform jual beli barang online </p>
+          <button class="tombol-projek" data-modal-img="project/projek4.png">Lihat Gambar Projek</button>
+        </article>
+
+         <article class="project-card">
+          <h3>katalog produk online</h3>
+          <img src="project/projek5.png" alt="" style="width: 300px; height: 200PX;">
+          <p>website ini berfungsi sebagai katalog produk online ini menggunakan php</p>
+          <button class="tombol-projek" data-modal-img="project/projek5.png">Lihat Gambar Projek</button>
+        </article>
+
+        <article class="project-card">
+          <h3>aplikasi biodata siswa</h3>
+          <img src="project/projek6.png" alt="" style="width: 300px; height: 200PX;">
+          <p>aplikasi ini berfungsi untuk menyimpan dan mengelola biodata siswa</p>
+          <button class="tombol-projek" data-modal-img="project/projek6.png">Lihat Gambar Projek</button>
+        </article>
+
+        <article class="project-card">
+          <h3>desain canva atm</h3>
+          <img src="project/projek7.png" alt="" style="width: 300px; height: 200PX;">
+          <p>desain ini digunakan untuk membuat tampilan atm yang menarik</p>
+          <button class="tombol-projek" data-modal-img="project/projek7.png">Lihat Gambar Projek</button>
+        </article>
+
+        <article class="project-card">  
+          <h3>website nilai hasil card</h3>
+          <img src="project/projek8.png" alt="" style="width: 300px; height: 200PX;">
+          <p>website ini berfungsi untuk menampilkan hasil nilai card yang di input</p>
+          <button class="tombol-projek" data-modal-img="project/projek8.png">Lihat Gambar Projek</button>
+        </article>
+
+        <article class="project-card">
+          <h3>website cek kelulusan</h3>
+          <img src="project/projek9.png" alt="" style="width: 300px; height: 200PX;">
+          <p>website ini berfungsi untuk mengecek status kelulusan siswa</p>
+          <button class="tombol-projek" data-modal-img="project/projek9.png">Lihat Gambar Projek</button>
+        </article>
+
+          <article class="project-card">
+          <h3>desain data siswa</h3>
+          <img src="project/projek10.png" alt="" style="width: 300px; height: 200PX;">
+          <p>desain ini digunakan untuk membuat tampilan data siswa yang menarik</p>
+          <button class="tombol-projek" data-modal-img="project/projek10.png">Lihat Gambar Projek</button>
+        </article>
+        
+         <article class="project-card">
+          <h3>katalog laravel</h3>
+          <img src="project/projek11.png" alt="" style="width: 300px; height: 200PX;">
+          <p>website ini berfungsi sebagai katalog produk online, katalog ini menggunakan laravel</p>
+          <button class="tombol-projek" data-modal-img="project/projek11.png">Lihat Gambar Projek</button>
+        </article>
+
+         <article class="project-card">
+          <h3>Aplilkasi kasir python</h3>
+          <img src="project/projek12.png" alt="" style="width: 300px; height: 200PX;">
+          <p>aplikasii ini digunakan untuk mengelola transaksi kasir dengan menggunakan bahasa pemrograman python</p>
+          <button class="tombol-projek" data-modal-img="project/projek12.png">Lihat Gambar Projek</button>
+        </article>
+        
+        
+      </div>
+    </div>
+  </section>
+
+  <section id="certificate" class="section">
+    <div class="glass wrap reveal">
+      <h2>Sertifikat saya</h2>
+      <div class="galeri-sertip marquee-track" id="cert-track">
+        <div class="sertip">
+          <img src="certificate/sertif1.jpg" alt="Sertifikat 1">
+          <button class="tombol-projek" data-modal-img="certificate/sertif1.jpg">Lihat Sertifikat</button>
+        </div>
+        <div class="sertip">
+          <img src="certificate/sertif2.jpg" alt="Sertifikat 2">
+          <button class="tombol-projek" data-modal-img="certificate/sertif2.jpg">Lihat Sertifikat</button>
+        </div>
+        <div class="sertip">
+          <img src="certificate/sertif3.jpg" alt="Sertifikat 3">
+          <button class="tombol-projek" data-modal-img="certificate/sertif3.jpg">Lihat Sertifikat</button>
+        </div>
+        <div class="sertip">
+          <img src="certificate/sertif4.jpg" alt="Sertifikat 4">
+          <button class="tombol-projek" data-modal-img="certificate/sertif4.jpg">Lihat Sertifikat</button>
+        </div>
+        <div class="sertip">
+          <img src="certificate/sertif5.jpg" alt="Sertifikat 5">
+          <button class="tombol-projek" data-modal-img="certificate/sertif5.jpg">Lihat Sertifikat</button>
+        </div>
+        <div class="sertip">
+          <img src="certificate/sertif6.jpg" alt="Sertifikat 6">
+          <button class="tombol-projek" data-modal-img="certificate/sertif6.jpg">Lihat Sertifikat</button>
+        </div>
+          <div class="sertip">
+          <img src="certificate/sertif7.jpg" alt="Sertifikat 7">
+          <button class="tombol-projek" data-modal-img="certificate/sertif7.jpg">Lihat Sertifikat</button>
+        </div>    
+      </div>
+    </div>
+  </section>
+
+  <section id="education" class="section">
+    <div class="glass wrap reveal">
+      <ul class="edu-list">
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="glass wrap reveal">
+      <h2>Contact</h2>
+      <form id="contact-form" novalidate>
+        <label for="name">Lionel keffas</label>
+        <input id="name" name="name" type="text" placeholder="Nama Anda" required />
+        <div class="error" id="name-error" aria-live="polite"></div>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="Email Anda" required />
+        <div class="error" id="email-error" aria-live="polite"></div>
+
+        <label for="message">Pesan</label>
+        <textarea id="message" name="message" rows="5" placeholder="Tulis pesan..." required></textarea>
+        <div class="error" id="message-error" aria-live="polite"></div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn">📤 Kirim via WhatsApp</button>
+          <button type="reset" class="btn ghost">Reset</button>
+          <a id="whatsapp-link" class="btn outline" href="https://wa.me/6285782490490" target="_blank" rel="noopener" aria-label="Kirim pesan lewat WhatsApp">Chat via WhatsApp</a>
+        </div>
+
+        <p id="success-message" class="success-msg" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <div id="image-modal" class="image-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-overlay"></div>
+    <div class="modal-container">
+      <button class="modal-close" aria-label="Tutup modal">✕</button>
+      <img id="modal-image" src="" alt="Gambar" class="modal-image">
+    </div>
+  </div>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="wrap">
+      <small>© 2025 Lionel Keffas — XI RPL 1, SMK Plus Pelita Nusantara</small>
+    </div>
+  </footer>
+
+  <script>
+    if(window.emailjs && typeof emailjs.init === 'function'){
+      try{ emailjs.init('YOUR_EMAILJS_USERID'); }catch(e){console.warn(e)}
+    }
+  </script>
+  <script src="script.js" defer></script>
+</body>
+</html>

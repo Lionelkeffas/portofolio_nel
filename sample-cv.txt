@@ -1,0 +1,75 @@
+================================================================================
+                         LIONEL KEFFAS
+                              CV
+================================================================================
+
+CONTACT INFORMATION
+Email: lionelkeffass7@gmail.com
+Phone: +62-857-8249-0490
+Address: Cibinong, Bogor
+GitHub: github.com/nel174
+LinkedIn: linkedin.com/in/lionel-keffas-461752412
+
+================================================================================
+ABOUT
+================================================================================
+
+Student at SMK Plus Pelita Nusantara, Software Engineering major (RPL).
+Passionate about web development and always eager to learn new technologies.
+Experienced in building various web applications and desktop projects.
+
+================================================================================
+EDUCATION
+================================================================================
+
+SMK Plus Pelita Nusantara
+Rekayasa Perangkat Lunak (Software Engineering)
+2024 - 2026
+
+================================================================================
+SKILLS
+================================================================================
+
+Web Development:
+  - HTML5, CSS3, JavaScript
+  - PHP, Laravel
+  - MySQL, Database Design
+  - Web Design & UI/UX
+
+Other Skills:
+  - Python
+  - Desktop Applications
+  - Git & Version Control
+  - Problem Solving
+
+================================================================================
+PROJECTS
+================================================================================
+
+1. Sistem Pengolahan Nilai Siswa
+   Web application for managing student grades and academic records
+
+2. Sistem Manajemen Data Siswa
+   Complete student data management system with database
+
+3. Website E-Commerce
+   Full-stack e-commerce platform with product catalog and checkout
+
+4. Aplikasi Kasir Python
+   Desktop cashier application built with Python
+
+5. Website Jam Digital
+   Digital clock website with real-time display
+
+6. Aplikasi Biodata Siswa
+   Student biodata application and management system
+
+================================================================================
+CERTIFICATIONS & ACHIEVEMENTS
+================================================================================
+
+- Multiple certificates from various training programs
+- Proficiency in HTML, CSS, JavaScript, and PHP
+- Experience with Laravel framework
+
+================================================================================

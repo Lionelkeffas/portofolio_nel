@@ -79,25 +79,6 @@ if(themeToggle){
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 if(reduceMotion) document.documentElement.style.scrollBehavior = 'auto';
 
-function initMarqueeTracks(){
-  document.querySelectorAll('.marquee-track').forEach(track => {
-    const existingGroups = track.querySelectorAll('.marquee-group');
-    if(existingGroups.length) return;
-
-    const group = document.createElement('div');
-    group.className = 'marquee-group';
-
-    Array.from(track.children).forEach(child => group.appendChild(child));
-    track.appendChild(group);
-
-    const duplicate = group.cloneNode(true);
-    duplicate.setAttribute('aria-hidden', 'true');
-    track.appendChild(duplicate);
-  });
-}
-
-initMarqueeTracks();
-
 (function(){
   const canvas = document.getElementById('particles');
   if(!canvas || reduceMotion) return;

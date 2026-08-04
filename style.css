@@ -113,7 +113,7 @@ body{
 .certificate-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2.25rem;align-items:start}
 .galeri-sertip{border:none;padding:0}
 .sertip{display:flex;flex-direction:column;justify-content:space-between;gap:1.2rem;padding:1.6rem;border-radius:26px;border:1px solid rgba(255,255,255,0.12);background:linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.02));backdrop-filter:blur(18px);transition:transform .25s ease, box-shadow .25s ease;overflow:hidden;min-height:380px;position:relative}
-.sertip::before{content:'Sertifikat PKL';display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:.28rem .65rem;border-radius:999px;background:rgba(155,107,255,0.16);color:var(--accent2)}
+.sertip::before{content:'Sertifikat';display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:.28rem .65rem;border-radius:999px;background:rgba(155,107,255,0.16);color:var(--accent2)}
 .certificate-card::after{content:'';position:absolute;left:1.6rem;bottom:1.6rem;width:52px;height:4px;border-radius:999px;background:linear-gradient(90deg,var(--accent2),rgba(155,107,255,0.2));opacity:.95}
 .sertip img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:22px;border:1px solid rgba(255,255,255,0.08);box-shadow:0 20px 45px rgba(0,0,0,0.13)}
 .certificate-meta{display:flex;align-items:center;justify-content:space-between;gap:.6rem;font-size:.9rem;color:var(--muted);font-weight:600;margin-top:-.3rem}

@@ -230,4 +230,4 @@ if(skipLink){
 
 document.addEventListener('keyup', e => {
   if(e.key === 'Escape' && menu.classList.contains('show')) menu.classList.remove('show');
-});
+} );

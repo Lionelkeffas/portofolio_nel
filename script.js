@@ -81,7 +81,7 @@ if(reduceMotion) document.documentElement.style.scrollBehavior = 'auto';
 
 (function(){
   const canvas = document.getElementById('particles');
-  if(!canvas || reduceMotion) return;
+ if(!canvas || reduceMotion || window.innerWidth <= 600) return;
   const ctx = canvas.getContext('2d');
   let w = canvas.width = innerWidth;
   let h = canvas.height = innerHeight;

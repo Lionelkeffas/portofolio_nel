@@ -82,7 +82,10 @@ body{
 .section-copy{color:var(--muted);max-width:720px;line-height:1.8;margin-top:.35rem}
 .section h2{color:var(--accent1);margin:0;display:inline-block;position:relative;padding-bottom:.25rem;font-size:clamp(1.8rem,2.4vw,2.6rem)}
 .section h2::after{content:'';position:absolute;left:0;bottom:0;width:70px;height:4px;border-radius:999px;background:linear-gradient(90deg,var(--accent1),var(--accent2));box-shadow:0 6px 16px rgba(53,214,255,.18)}
-.reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease, transform .6s ease}
+.reveal{
+  opacity:1;
+  transform:translateY(0);
+}
 
 .eyebrow{display:inline-flex;font-size:.82rem;text-transform:uppercase;letter-spacing:.18em;color:var(--accent1);font-weight:700;margin-bottom:.9rem}
 .hero-meta{display:grid;grid-template-columns:repeat(3,minmax(0,max-content));gap:.8rem;font-size:.95rem;color:var(--muted);margin:1.2rem 0}
@@ -257,8 +260,36 @@ body.light{
     opacity: 0;
     transform: scale(0.95);
   }
+
   to {
     opacity: 1;
     transform: scale(1);
+  }
+}
+
+
+/* Optimasi HP */
+@media (max-width: 600px) {
+
+  /* Matikan blur berat di HP */
+  .hero-panel,
+  .project-card,
+  .sertip,
+  .site-header {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+
+  /* Kurangi efek bayangan di HP */
+  .project-card,
+  .sertip {
+    box-shadow: 0 12px 30px rgba(0, 0, 0, .12);
+  }
+
+  /* Matikan efek hover di touchscreen */
+  .project-card:hover,
+  .sertip:hover {
+    transform: none;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, .12);
   }
 }

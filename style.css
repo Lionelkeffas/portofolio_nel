@@ -268,10 +268,8 @@ body.light{
 }
 
 
-/* Optimasi HP */
-@media (max-width: 600px) {
 
-  /* Matikan blur berat di HP */
+@media (max-width: 600px) {
   .hero-panel,
   .project-card,
   .sertip,
@@ -280,13 +278,10 @@ body.light{
     -webkit-backdrop-filter: none;
   }
 
-  /* Kurangi efek bayangan di HP */
   .project-card,
   .sertip {
     box-shadow: 0 12px 30px rgba(0, 0, 0, .12);
   }
-
-  /* Matikan efek hover di touchscreen */
   .project-card:hover,
   .sertip:hover {
     transform: none;
